@@ -1,45 +1,75 @@
-# 🚆 Indian Railways Network Analysis
+# 🚆 Indian Railways Network Analysis: Connectivity & Efficiency
 
 ## 📌 Overview
-This project performs exploratory data analysis on Indian Railways operational data to uncover patterns in:
-- Station traffic distribution
-- Train route structures
-- Distance characteristics
-- Scheduling behavior
+Exploratory Data Analysis on the Indian Railways operational dataset containing 
+186,124 records across 12 columns, covering 11,000+ trains and 8,000+ stations.
 
-The dataset contains over **186,000 records**, covering **11,000+ trains** and **8,000+ stations**.
+The goal is to understand how traffic and connectivity are distributed across 
+the network — and whether the system is balanced or heavily centralized around 
+a few critical nodes.
 
 ---
 
-## 📊 Key Insights
+## 📊 Key Findings
+- 🔴 Just **2,777 out of 8,000+ stations** account for **80% of total network traffic**
+- 🏙️ **CST-Mumbai** is the busiest station with **1,027 unique trains**
+- 📏 Median route distance is just **82 km** but the longest route (CAPE–DBRG) covers **4,260 km**
+- ⏰ Peak train activity occurs at **08:00** for both arrivals and departures
+- 🚉 Most frequent route: **Chennai Beach → Tambaram** with **137 trains**
+- 🔁 Traffic flows are **bidirectional** — Howrah Junction and Sealdah dominate both origins and destinations
+- ⚡ Average route efficiency: **20.28 km per stop**
 
-- Railway network is **highly centralized** around major hubs like CST-Mumbai and Sealdah
-- Majority of trains are **short-distance (median: 82 km)**
-- Most trains make **10–20 stops**
-- Clear **peak activity at 8 AM and evening hours**
-- Suburban routes dominate operational frequency
+---
+
+## 📁 Analysis Sections
+1. Data Loading and Overview
+2. Data Cleaning & Preprocessing
+3. Busiest Railway Stations
+4. Train Route Structure Analysis
+5. Train Route Distance Analysis
+6. Station Connectivity Analysis
+7. Source–Destination Route Analysis
+8. Scheduling Pattern Analysis
+9. Distance vs Stops Relationship
+10. Critical Railway Hubs & Network Dependence
+11. Route Efficiency Analysis
+12. Station Hub Classification
+13. Station Role Analysis
+14. Key Insights & Conclusion
 
 ---
 
 ## 🛠️ Tech Stack
-- Python
-- Pandas
-- Matplotlib / Seaborn
-- Jupyter Notebook
+| Tool | Purpose |
+|------|---------|
+| Python | Core programming language |
+| Pandas | Data loading, cleaning, analysis |
+| Matplotlib | Bar charts, pie charts, line plots |
+| Seaborn | Histograms, scatter plots |
+| Jupyter Notebook | Development environment |
 
 ---
 
-## 📁 Dataset
-Source: Government of India Open Data Platform
+## 📂 Project Structure
+indian-railways-network-analysis/
+│
+├── data/
+│   └── Train_details_22122017.csv
+│
+└── notebooks/
+└── 01_eda.ipynb
 
 ---
 
-## 📈 Project Highlights
-- Large-scale real-world dataset
-- Network-level insights (not basic EDA)
-- Clear business/operational interpretation
+## 📋 Dataset
+- **Records:** 186,124
+- **Columns:** 12 (Train No, Train Name, Station Code, Station Name, Arrival Time, Departure Time, Distance, Source Station, Destination Station, etc.)
+- **Source:** Indian Railways operational data (December 2017)
 
 ---
 
-## 📌 Author
-Martin George
+## 👤 Author
+**Martin George**  
+B.Tech Student  
+📧 Email: 06martingeorge@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/martin-george-635340321/
