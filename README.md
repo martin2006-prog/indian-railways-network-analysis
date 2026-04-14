@@ -51,13 +51,15 @@ a few critical nodes.
 ---
 
 ## 📂 Project Structure
+```
 indian-railways-network-analysis/
 │
 ├── data/
 │   └── Train_details_22122017.csv
 │
-└── notebooks/
-└── 01_eda.ipynb
+├── notebooks/
+│   └── 01_eda.ipynb
+```
 
 ---
 
